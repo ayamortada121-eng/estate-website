@@ -1,0 +1,675 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTATE | Find a Place to Call Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">ESTATE<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#properties">Properties</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="nav-button">Get in Touch</a>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="hero-subtitle">DISCOVER YOUR NEXT ADDRESS</p>
+        <h1>Find a Place<br>to Call <em>Home.</em></h1>
+
+        <p class="hero-description">
+            Exceptional properties. Beautiful spaces.
+            A new chapter starts here.
+        </p>
+
+        <a href="#properties" class="hero-button">
+            Explore Properties
+        </a>
+    </div>
+
+    <div class="hero-bottom">
+        <span>CURATED HOMES IN LEBANON</span>
+        <span>EST. 2026</span>
+    </div>
+</section>
+
+
+<!-- SEARCH -->
+<section class="search-section">
+    <div class="search-heading">
+        <p class="section-label">FIND YOUR PROPERTY</p>
+        <h2>What are you looking for?</h2>
+    </div>
+
+    <form class="search-form" id="searchForm">
+
+        <div class="search-field">
+            <label for="locationFilter">Location</label>
+            <select id="locationFilter">
+                <option value="">All Locations</option>
+                <option value="Beirut">Beirut</option>
+                <option value="Achrafieh">Achrafieh</option>
+                <option value="Mount Lebanon">Mount Lebanon</option>
+                <option value="Metn">Metn</option>
+                <option value="Baabda">Baabda</option>
+                <option value="Dbayeh">Dbayeh</option>
+                <option value="Jounieh">Jounieh</option>
+                <option value="Keserwan">Keserwan</option>
+                <option value="Batroun">Batroun</option>
+                <option value="North Lebanon">North Lebanon</option>
+            </select>
+        </div>
+
+        <div class="search-field">
+            <label for="typeFilter">Property Type</label>
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Villa">Villa</option>
+                <option value="Penthouse">Penthouse</option>
+                <option value="Studio">Studio</option>
+                <option value="House">House</option>
+            </select>
+        </div>
+
+        <div class="search-field">
+            <label for="priceFilter">Maximum Price</label>
+            <select id="priceFilter">
+                <option value="">Any Price</option>
+                <option value="150000">$150,000</option>
+                <option value="250000">$250,000</option>
+                <option value="350000">$350,000</option>
+                <option value="500000">$500,000</option>
+                <option value="750000">$750,000</option>
+                <option value="1000000">$1,000,000</option>
+            </select>
+        </div>
+
+        <div class="search-field">
+            <label for="settingFilter">Property Setting</label>
+            <select id="settingFilter">
+                <option value="">Any Setting</option>
+                <option value="sea view">Sea View</option>
+                <option value="mountain view">Mountain View</option>
+                <option value="garden">Garden</option>
+                <option value="swimming pool">Swimming Pool</option>
+                <option value="parking">Parking</option>
+            </select>
+        </div>
+
+        <button type="submit" class="search-button">
+            Search
+        </button>
+    </form>
+</section>
+
+
+<!-- PROPERTIES -->
+<section class="properties-section" id="properties">
+
+    <div class="section-header">
+        <div>
+            <p class="section-label">OUR COLLECTION</p>
+            <h2>Explore Our Properties</h2>
+            <p class="section-description">
+                Discover carefully selected homes for every lifestyle.
+            </p>
+        </div>
+
+        <span class="property-count" id="propertyCount">
+            9 Properties
+        </span>
+    </div>
+
+
+    <div class="property-grid" id="propertyGrid">
+
+        <!-- PROPERTY 1 -->
+        <article class="property-card"
+            data-location="Beirut"
+            data-region="Beirut"
+            data-type="Apartment"
+            data-price="280000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000" alt="Modern apartment">
+                <span class="property-tag">For Sale</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Beirut, Lebanon</p>
+                <h3>Modern City Apartment</h3>
+                <p class="property-price">$280,000</p>
+
+                <div class="property-features">
+                    <span>3 Bedrooms</span>
+                    <span>2 Bathrooms</span>
+                    <span>145 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Modern City Apartment"
+                    data-location="Beirut, Lebanon"
+                    data-price="$280,000"
+                    data-type="Apartment"
+                    data-beds="3"
+                    data-baths="2"
+                    data-area="145 m²"
+                    data-description="A beautifully designed modern apartment in the heart of Beirut. It features spacious interiors, elegant finishes and a comfortable living area."
+                    data-features="Modern kitchen|Central heating|Balcony|Underground parking"
+                    data-why="A great choice for buyers looking for a spacious modern home in Beirut. Its central location offers convenient access to shops, restaurants and daily services."
+                    data-images="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200|https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200|https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 2 -->
+        <article class="property-card"
+            data-location="Achrafieh"
+            data-region="Beirut"
+            data-type="Apartment"
+            data-price="350000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1000" alt="Elegant apartment">
+                <span class="property-tag">For Sale</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Achrafieh, Beirut</p>
+                <h3>Elegant Urban Residence</h3>
+                <p class="property-price">$350,000</p>
+
+                <div class="property-features">
+                    <span>3 Bedrooms</span>
+                    <span>3 Bathrooms</span>
+                    <span>180 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Elegant Urban Residence"
+                    data-location="Achrafieh, Beirut"
+                    data-price="$350,000"
+                    data-type="Apartment"
+                    data-beds="3"
+                    data-baths="3"
+                    data-area="180 m²"
+                    data-description="An elegant residence combining contemporary architecture with timeless interior design. Located in the lively neighborhood of Achrafieh."
+                    data-features="Designer kitchen|Large balcony|Guest bathroom|Private parking"
+                    data-why="Ideal for buyers who appreciate an elegant home in a well-known Beirut neighborhood. Its generous layout and convenient location make everyday living comfortable."
+                    data-images="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200|https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200|https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 3 -->
+        <article class="property-card"
+            data-location="Dbayeh"
+            data-region="Mount Lebanon Metn"
+            data-type="Villa"
+            data-price="750000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1000" alt="Luxury villa">
+                <span class="property-tag">Featured</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Dbayeh, Lebanon</p>
+                <h3>Contemporary Private Villa</h3>
+                <p class="property-price">$750,000</p>
+
+                <div class="property-features">
+                    <span>5 Bedrooms</span>
+                    <span>4 Bathrooms</span>
+                    <span>420 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Contemporary Private Villa"
+                    data-location="Dbayeh, Lebanon"
+                    data-price="$750,000"
+                    data-type="Villa"
+                    data-beds="5"
+                    data-baths="4"
+                    data-area="420 m²"
+                    data-description="A spacious contemporary villa offering privacy, generous living spaces and beautiful outdoor areas. Ideal for family living."
+                    data-features="Private swimming pool|Garden|Terrace|Garage|Modern kitchen"
+                    data-why="A strong option for families who want extra space, privacy and outdoor living. The private pool, garden and terrace create room to relax and entertain."
+                    data-images="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200|https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200|https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 4 -->
+        <article class="property-card"
+            data-location="Jounieh"
+            data-region="Mount Lebanon Keserwan"
+            data-type="Penthouse"
+            data-price="620000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000" alt="Sea view penthouse">
+                <span class="property-tag">For Sale</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Jounieh, Lebanon</p>
+                <h3>Sea View Penthouse</h3>
+                <p class="property-price">$620,000</p>
+
+                <div class="property-features">
+                    <span>4 Bedrooms</span>
+                    <span>3 Bathrooms</span>
+                    <span>260 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Sea View Penthouse"
+                    data-location="Jounieh, Lebanon"
+                    data-price="$620,000"
+                    data-type="Penthouse"
+                    data-beds="4"
+                    data-baths="3"
+                    data-area="260 m²"
+                    data-description="A stunning penthouse with generous interiors and an impressive sea view. Designed for comfortable and sophisticated living."
+                    data-features="Sea view|Private terrace|Floor-to-ceiling windows|Parking"
+                    data-why="Perfect for buyers who value open views and a private outdoor space. The terrace and large windows make the sea view an important part of the living experience."
+                    data-images="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200|https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200|https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 5 -->
+        <article class="property-card"
+            data-location="Batroun"
+            data-region="North Lebanon"
+            data-type="House"
+            data-price="420000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1000" alt="Coastal family home">
+                <span class="property-tag">For Sale</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Batroun, Lebanon</p>
+                <h3>Coastal Family Home</h3>
+                <p class="property-price">$420,000</p>
+
+                <div class="property-features">
+                    <span>4 Bedrooms</span>
+                    <span>3 Bathrooms</span>
+                    <span>230 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Coastal Family Home"
+                    data-location="Batroun, Lebanon"
+                    data-price="$420,000"
+                    data-type="House"
+                    data-beds="4"
+                    data-baths="3"
+                    data-area="230 m²"
+                    data-description="A welcoming family home in the beautiful coastal area of Batroun, with bright interiors and relaxing outdoor spaces."
+                    data-features="Garden|Outdoor terrace|Fireplace|Private parking"
+                    data-why="A lovely choice for buyers who enjoy coastal living and outdoor spaces. The garden and terrace offer a relaxed setting for family time and entertaining."
+                    data-images="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200|https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200|https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 6 -->
+        <article class="property-card"
+            data-location="Baabda"
+            data-region="Mount Lebanon Baabda"
+            data-type="Apartment"
+            data-price="195000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1000" alt="Bright family apartment">
+                <span class="property-tag">New Listing</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Baabda, Lebanon</p>
+                <h3>Bright Family Apartment</h3>
+                <p class="property-price">$195,000</p>
+
+                <div class="property-features">
+                    <span>3 Bedrooms</span>
+                    <span>2 Bathrooms</span>
+                    <span>135 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Bright Family Apartment"
+                    data-location="Baabda, Lebanon"
+                    data-price="$195,000"
+                    data-type="Apartment"
+                    data-beds="3"
+                    data-baths="2"
+                    data-area="135 m²"
+                    data-description="A bright and practical family apartment with a welcoming atmosphere, spacious rooms and convenient access to local services."
+                    data-features="Balcony|Equipped kitchen|Elevator|Parking|Mountain view"
+                    data-why="An attractive option for families seeking a practical home with comfortable room sizes. Its balcony, parking and mountain-view feature add to its everyday appeal."
+                    data-images="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200|https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200|https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 7 -->
+        <article class="property-card"
+            data-location="Beirut"
+            data-region="Beirut"
+            data-type="Studio"
+            data-price="115000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1000" alt="Minimal city studio">
+                <span class="property-tag">For Sale</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Beirut, Lebanon</p>
+                <h3>Minimal City Studio</h3>
+                <p class="property-price">$115,000</p>
+
+                <div class="property-features">
+                    <span>1 Bedroom</span>
+                    <span>1 Bathroom</span>
+                    <span>65 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Minimal City Studio"
+                    data-location="Beirut, Lebanon"
+                    data-price="$115,000"
+                    data-type="Studio"
+                    data-beds="1"
+                    data-baths="1"
+                    data-area="65 m²"
+                    data-description="A stylish studio apartment with a smart layout, modern finishes and comfortable living spaces. A great option for city living."
+                    data-features="Open-plan layout|Modern bathroom|Fitted kitchen|Elevator"
+                    data-why="A practical option for a first-time buyer or someone looking for a compact city home. Its efficient layout makes good use of the available space."
+                    data-images="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200|https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200|https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 8 -->
+        <article class="property-card"
+            data-location="Dbayeh"
+            data-region="Mount Lebanon Metn"
+            data-type="Villa"
+            data-price="890000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000" alt="Grand luxury residence">
+                <span class="property-tag">Featured</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Dbayeh, Lebanon</p>
+                <h3>Grand Luxury Residence</h3>
+                <p class="property-price">$890,000</p>
+
+                <div class="property-features">
+                    <span>6 Bedrooms</span>
+                    <span>5 Bathrooms</span>
+                    <span>500 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Grand Luxury Residence"
+                    data-location="Dbayeh, Lebanon"
+                    data-price="$890,000"
+                    data-type="Villa"
+                    data-beds="6"
+                    data-baths="5"
+                    data-area="500 m²"
+                    data-description="An impressive luxury residence with spacious rooms, refined finishes and generous outdoor areas for entertaining and family life."
+                    data-features="Swimming pool|Private garden|Guest suite|Garage|Large terrace"
+                    data-why="Designed for buyers who need generous space and privacy. The pool, garden, guest suite and large terrace offer several ways to enjoy the home."
+                    data-images="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200|https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200|https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+
+        <!-- PROPERTY 9 -->
+        <article class="property-card"
+            data-location="Achrafieh"
+            data-region="Beirut"
+            data-type="Apartment"
+            data-price="245000">
+
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1000" alt="Contemporary city apartment">
+                <span class="property-tag">New Listing</span>
+            </div>
+
+            <div class="property-info">
+                <p class="property-location">Achrafieh, Beirut</p>
+                <h3>Contemporary City Living</h3>
+                <p class="property-price">$245,000</p>
+
+                <div class="property-features">
+                    <span>2 Bedrooms</span>
+                    <span>2 Bathrooms</span>
+                    <span>120 m²</span>
+                </div>
+
+                <button class="view-details"
+                    data-title="Contemporary City Living"
+                    data-location="Achrafieh, Beirut"
+                    data-price="$245,000"
+                    data-type="Apartment"
+                    data-beds="2"
+                    data-baths="2"
+                    data-area="120 m²"
+                    data-description="A thoughtfully designed apartment featuring a contemporary interior, comfortable bedrooms and a practical layout in Achrafieh."
+                    data-features="Open living area|Balcony|Modern kitchen|Parking"
+                    data-why="A balanced option for buyers who want a modern apartment in an established Beirut neighborhood. Its two-bedroom layout suits couples, small families or professionals."
+                    data-images="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200|https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=1200|https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200">
+                    View Details
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="no-results" id="noResults" hidden>
+        No properties found. Try changing your search filters.
+    </p>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200" alt="Beautiful home interior">
+    </div>
+
+    <div class="about-content">
+        <p class="section-label">ABOUT ESTATE</p>
+
+        <h2>More Than a Property.<br>A Place to <em>Belong.</em></h2>
+
+        <p>
+            At ESTATE, we believe that finding a home is about more
+            than four walls. It is about discovering a space that
+            reflects your lifestyle, your dreams and your future.
+        </p>
+
+        <p>
+            From modern city apartments to exceptional private villas,
+            explore a collection of properties selected to inspire.
+        </p>
+
+        <a href="contact.html" class="text-link">Get to Know Us →</a>
+    </div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta-section">
+    <p class="section-label">YOUR NEXT CHAPTER STARTS HERE</p>
+    <h2>Let's Find Your<br>Perfect Place.</h2>
+    <a href="contact.html" class="cta-button">Contact Our Team</a>
+</section>
+
+
+<!-- PROPERTY DETAILS MODAL -->
+<div class="modal" id="propertyModal" aria-hidden="true">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="modalClose" aria-label="Close details">
+            &times;
+        </button>
+
+        <div class="modal-gallery">
+            <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">
+                &#10094;
+            </button>
+
+            <img src="" alt="Property gallery" id="modalMainImage">
+
+            <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">
+                &#10095;
+            </button>
+
+            <div class="gallery-counter" id="galleryCounter">1 / 3</div>
+        </div>
+
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+
+        <div class="modal-details">
+            <p class="property-location" id="modalLocation"></p>
+            <h2 id="modalTitle"></h2>
+            <p class="modal-price" id="modalPrice"></p>
+
+            <div class="modal-stats">
+                <div>
+                    <strong id="modalBeds"></strong>
+                    <span>Bedrooms</span>
+                </div>
+
+                <div>
+                    <strong id="modalBaths"></strong>
+                    <span>Bathrooms</span>
+                </div>
+
+                <div>
+                    <strong id="modalArea"></strong>
+                    <span>Area</span>
+                </div>
+
+                <div>
+                    <strong id="modalType"></strong>
+                    <span>Property Type</span>
+                </div>
+            </div>
+
+            <h3>About This Property</h3>
+            <p id="modalDescription"></p>
+
+            <h3>Why Choose This Property?</h3>
+            <p id="modalWhy"></p>
+
+            <h3>Property Features</h3>
+            <ul id="modalFeatures"></ul>
+
+            <a href="contact.html" class="modal-contact-button">
+                Enquire About This Property
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">ESTATE<span>.</span></a>
+            <p>Find a place to call home.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <a href="index.html">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <a href="contact.html">Get in Touch</a>
+            <span>Beirut, Lebanon</span>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ESTATE. All Rights Reserved.</p>
+        <p>Find your place. Create your story.</p>
+    </div>
+
+    <p class="demo-note">
+        ESTATE is a demonstration project. Property listings,
+        prices and contact details are fictional sample content.
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

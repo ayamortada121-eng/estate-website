@@ -1,0 +1,188 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ESTATE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ESTATE<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#properties">Properties</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <p class="section-label">LET'S CONNECT</p>
+            <h1>We're Here to Help You <span>Find Home.</span></h1>
+            <p>
+                Have a question or interested in a property?
+                We'd love to hear from you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p class="section-label">GET IN TOUCH</p>
+                <h2>Let's Start a Conversation</h2>
+
+                <p class="contact-description">
+                    Whether you're buying, selling, or simply exploring
+                    your options, our team is ready to assist you.
+                </p>
+
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@estate.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">☎</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+961 70 000 000</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">⌖</span>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Beirut, Lebanon</p>
+                    </div>
+                </div>
+
+                <p class="demo-note">
+                    Contact details shown are fictional demo information.
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                            minlength="2"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="Buying a property">Buying a property</option>
+                            <option value="Selling a property">Selling a property</option>
+                            <option value="Renting a property">Renting a property</option>
+                            <option value="General inquiry">General inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us how we can help..."
+                            required
+                            minlength="10"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Success Notification -->
+    <div
+        class="success-notification"
+        id="successNotification"
+        role="status"
+        aria-live="polite"
+        aria-hidden="true"
+    >
+        <div class="success-icon">✓</div>
+        <div class="success-text">
+            <strong>Message sent successfully!</strong>
+            <p>Thank you for contacting ESTATE. We'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">ESTATE<span>.</span></a>
+            <p>Find a place to call home.</p>
+            <p class="copyright">© 2026 ESTATE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
